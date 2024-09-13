@@ -21,7 +21,7 @@ public class Main
 	Random rnd = new Random();
 	final int MAX_ROUNDS = 10;
 	final int MAX_GUESSES = 4;
-	final boolean debug = true;
+	final boolean DEBUG = true;
 
 	Colour[] code = new Colour[MAX_GUESSES];
 	GameState[] check = new GameState[MAX_GUESSES];
@@ -31,7 +31,7 @@ public class Main
 	    code[i] = Colour.values()[rnd.nextInt(Colour.values().length)];
 	}
 
-	if (debug)
+	if (DEBUG)
 	{
 	    for (Colour colour : code)
 	    {
