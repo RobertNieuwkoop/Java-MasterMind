@@ -90,7 +90,6 @@ public class Main
 		if (guesses[i].equals(code[i]))
 		{
 		    check[i] = GameState.BLACK;
-		    continue;
 		} else
 		{
 		    for (int j = 0; j < MAX_GUESSES; j++)
@@ -124,5 +123,6 @@ public class Main
 	{
 	    System.out.println("Sad");
 	}
+	sc.close();
     }
 }
